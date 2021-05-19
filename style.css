@@ -20,3 +20,31 @@
 .lime_text{
  color:  #a7cd4a;
 }
+
+.btn{
+  background-color: #006125;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+.btn:hover {
+  background-color: #a7cd4a;
+  color: white;
+}
+
+.modal-head{
+  background-color: #a7cd4a;
+}
+.white-text{
+  color: white;
+}
+
+li{
+  margin-left: 15px;
+}
+
+footer{
+  background-color: #a7cd4a;
+}
+a{
+  color: #006125;
+}
