@@ -12,9 +12,10 @@
 
     <!-- Favicons -->
     <link rel="icon" href="images/logo.png" type="image/jpg">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet">
+
   </head>
   <body>
 
@@ -66,7 +67,32 @@
     </div>
     <div class="row row-cols-2 row-cols-md-2 mb-2">
       <div class="col">
-        <h4 class="display-8"><a class="link-secondary" href="#services">Delivery and PickUp</a></h4>
+        <button type="button" class="btn" data-toggle="modal" data-target="#pickupModal">
+          Pickup + Delivery
+        </button>
+        <!-- Pickup Modal -->
+        <div class="modal fade" id="pickupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header modal-head">
+                <h5 class="modal-title white-text" id="pickupModalLabel">Pickup + Delivery</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+               We drive to wherever you need us to pick up item(s) from then drive your item(s) to you!
+              </div>
+              <ul class="list-unstyled text-large">
+                <li><img src="images/check.png" width="30"/> Packages + Mail</li>
+                <li><img src="images/check.png" width="30"/> Prescriptions</li>
+                <li><img src="images/check.png" width="30"/> Dry Cleaning</li>
+                <li><img src="images/check.png" width="30"/> Office Supplies and Paperwork</li>
+                <li><img src="images/check.png" width="30"/> Clothing Donation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <ul class="list-unstyled text-large">
           <li><img src="images/check.png" width="30"/> Packages + Mail</li>
           <li><img src="images/check.png" width="30"/> Prescriptions</li>
@@ -76,7 +102,31 @@
         </ul>
       </div>
       <div class="col">
-        <h4 class="display-8"><a class="link-secondary" href="#services">Errands</a></h4>
+        <button type="button" class="btn" data-toggle="modal" data-target="#errandModal">
+          Errands
+        </button>
+        <!-- Pickup Modal -->
+        <div class="modal fade" id="errandModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header modal-head">
+                <h5 class="modal-title white-text" id="errandModalLabel">Errands</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  Any personal shopping or food delivery! We accept offers and suggestions to personalize our services to fit what you need. For restaurant and food services, please place an order at your chosen place, then text or call Runner so we can pick it up and deliver your food to you.               </div>
+              <ul class="list-unstyled text-large">
+                <li><img src="images/check.png" width="30"/> Personal Shopping</li>
+                <li><img src="images/check.png" width="30"/> Grocery Shopping</li>
+                <li><img src="images/check.png" width="30"/> Food Pickup and Delivery</li>
+                <li><img src="images/check.png" width="30"/> Post Office Work</li>
+                <li><img src="images/check.png" width="30"/> Line Waiting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <ul class="list-unstyled text-large">
           <li><img src="images/check.png" width="30"/> Personal Shopping</li>
           <li><img src="images/check.png" width="30"/> Grocery Shopping</li>
@@ -86,7 +136,35 @@
         </ul>
       </div>
       <div class="col">
-        <h4 class="display-8"><a class="link-secondary" href="#services">Housekeeping</a></h4>
+        <button type="button" class="btn" data-toggle="modal" data-target="#HousekeepingModal">
+          Housekeeping
+        </button>
+        <!-- Housekeeping Modal -->
+        <div class="modal fade" id="HousekeepingModal" tabindex="-1" role="dialog" aria-labelledby="HousekeepingModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header modal-head">
+                <h5 class="modal-title white-text" id="HousekeepingModalLabel">Housekeeping</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Get an extra pair of hands to help you with any household task on your TODO list! We come to you to clean up using our cleaning/organizational supplies or yours. Regular rates with a two hour minimum for residential cleaning. Laundry done at your dwelling or local laundromat.
+               </div>
+              <ul class="list-unstyled text-large">
+                <li><img src="images/check.png" width="30"/> De-cluttering</li>
+                <li><img src="images/check.png" width="30"/> Organizing</li>
+                <li><img src="images/check.png" width="30"/> Laundry</li>
+                <li><img src="images/check.png" width="30"/> Taking Out Trash</li>
+                <li><img src="images/check.png" width="30"/> Raking Leaves</li>
+                <li><img src="images/check.png" width="30"/> House Cleaning</li>
+                <li><img src="images/check.png" width="30"/> Cooking</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <ul class="list-unstyled text-large">
           <li><img src="images/check.png" width="30"/> De-cluttering</li>
           <li><img src="images/check.png" width="30"/> Organizing</li>
@@ -99,7 +177,35 @@
       </div>
 
       <div class="col">
-        <h4 class="display-8"><a class="link-secondary" href="#services">Companionship</a></h4>
+        <button type="button" class="btn" data-toggle="modal" data-target="#CompanionshipModal">
+          Companionship
+        </button>
+        <!-- Housekeeping Modal -->
+        <div class="modal fade" id="CompanionshipModal" tabindex="-1" role="dialog" aria-labelledby="CompanionshipModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header modal-head">
+                <h5 class="modal-title white-text" id="CompanionshipModalLabel">Companionship</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Relax and enjoy your away time from home! We do check-ins on houses, pets, people, and/or plants. We can can visit your senior loved ones to say hi, talk, assist, or simply listen to what they have to say. Having another person around can do wonders for some peoples lives and uplift their spirit.
+              </div>
+              <ul class="list-unstyled text-large">
+                <li><img src="images/check.png" width="30"/> Walking/Social Companion</li>
+                <li><img src="images/check.png" width="30"/> Motivational Helper</li>
+                <li><img src="images/check.png" width="30"/> Pet Sitting</li>
+                <li><img src="images/check.png" width="30"/> Pet Walking</li>
+                <li><img src="images/check.png" width="30"/> House Watching</li>
+                <li><img src="images/check.png" width="30"/> House Sitting</li>
+                <li><img src="images/check.png" width="30"/> Plant Watering</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <ul class="list-unstyled text-large">
           <li><img src="images/check.png" width="30"/> Walking/Social Companion</li>
           <li><img src="images/check.png" width="30"/> Motivational Helper</li>
@@ -120,11 +226,11 @@
       <p><span class="lime_text">Runner Errands</span>  accepts payments via the SumUp card reader. We accept Visa, MasterCard, American Express, Discover, DinersClubInternational, GooglePay, and ApplePay! </p>
     </div>
 
-    <div class="row row-cols-1 row-cols-md-2 mb-3 text-center">
+    <div class="row row-cols-1  text-center">
       <div class="col">
         <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-          <h4 class="my-0 fw-normal">Regular Rate</h4>
+        <div class="card-header modal-head">
+          <h4 class="my-0 fw-normal white-text ">Regular Rate</h4>
         </div>
         <div class="card-body">
           <h1 class="card-title pricing-card-title">$25 <small class="text-muted">/ hr</small></h1>
@@ -137,19 +243,28 @@
         </div>
       </div>
       </div>
+
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 mb-3 text-center">
       <div class="col">
         <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-          <h4 class="my-0 fw-normal">Senior Rate</h4>
+        <div class="card-header  modal-head">
+          <h4 class="my-0 fw-normal white-text">Seniors</h4>
         </div>
         <div class="card-body">
           <h1 class="card-title pricing-card-title">$20 <small class="text-muted">/ hr</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>1 hour minimum</li>
-            <li>$5.00 per 15 minutes after the first hour</li>
-            <li>Cancellations require 24 hours notice.</li>
-
-          </ul>
+          Errand services for individuals 65 and older.
+        </div>
+      </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 shadow-sm">
+        <div class="card-header modal-head">
+          <h4 class="my-0 fw-normal white-text">West Point Discount</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ hr</small></h1>
+          Night shift workers, law enforcement, and school officials.
         </div>
       </div>
       </div>
@@ -177,52 +292,48 @@
    <div class="row">
      <div class="col-12 col-md">
        <img class="mb-2" src="images/logo.png" alt="" width="24" height="19">
-       <small class="d-block mb-3 text-muted">&copy; 2021, Runner Errand Services LLC</small>
+       <small class="d-block mb-3 ">&copy; 2021, Runner Errand Services LLC</small>
        <p>
-         <small class="d-block mb-3 text-muted">P.O. Box 578, West Point, VA</small>
+         <small class="d-block mb-3 ">P.O. Box 578, West Point, VA</small>
        </p>
      </div>
      <div class="col-6 col-md">
        <h5>Services</h5>
-       <ul class="list-unstyled text-small">
-         <li><a class="link-secondary" href="#services">Delivery and Pickup</a></li>
-         <li><a class="link-secondary" href="#services">Housekeeping</a></li>
-         <li><a class="link-secondary" href="#services">Companionship</a></li>
-         <li><a class="link-secondary" href="#services">Errands</a></li>
+       <ul class="list-unstyled ">
+         <li><a href="#services">Delivery and Pickup</a></li>
+         <li><a class="link" href="#services">Housekeeping</a></li>
+         <li><a class="link" href="#services">Companionship</a></li>
+         <li><a class="link" href="#services">Errands</a></li>
        </ul>
      </div>
      <div class="col-6 col-md">
        <h5>Areas Served</h5>
        <ul class="list-unstyled text-small">
-         <li><a class="link-secondary" href="#">West Point</a></li>
-         <li><a class="link-secondary" href="#">New Kent</a></li>
-         <li><a class="link-secondary" href="#">King and Queen</a></li>
-         <li><a class="link-secondary" href="#">Urbanna</a></li>
-         <li><a class="link-secondary" href="#">Williamsburg</a></li>
-           <li><a class="link-secondary" href="#">King William</a></li>
-           <li><a class="link-secondary" href="#">Charles City</a></li>
-           <li><a class="link-secondary" href="#">White Stone</a></li>
-           <li><a class="link-secondary" href="#">Deltaville</a></li>
-           <li><a class="link-secondary" href="#">Little Plymouth</a></li>
-           <li><a class="link-secondary" href="#">Shacklefords</a></li>
-           <li><a class="link-secondary" href="#">Lanexa</a></li>
-           <li><a class="link-secondary" href="#">Toano</a></li>
-          <li><a class="link-secondary" href="#"> Providence Forge</a></li>
-           <li><a class="link-secondary" href="#">Saluda</a></li>
-           <li><a class="link-secondary" href="#">Eltham</a></li>
-          <li><a class="link-secondary" href="#"> Mattaponi</a></li>
-           <li><a class="link-secondary" href="#">Plum Point</a></li>
-           <li><a class="link-secondary" href="#">Topping</a></li>
+         <li><a href="#">West Point</a></li>
+         <li><a href="#">New Kent</a></li>
+         <li><a href="#">King and Queen</a></li>
+         <li><a href="#">Urbanna</a></li>
+         <li><a href="#">Williamsburg</a></li>
+           <li><a href="#">King William</a></li>
+           <li><a href="#">Charles City</a></li>
+           <li><a href="#">White Stone</a></li>
+           <li><a href="#">Deltaville</a></li>
+           <li><a href="#">Little Plymouth</a></li>
+           <li><a href="#">Shacklefords</a></li>
+           <li><a href="#">Lanexa</a></li>
+           <li><a href="#">Toano</a></li>
+          <li><a href="#"> Providence Forge</a></li>
+           <li><a href="#">Saluda</a></li>
+           <li><a href="#">Eltham</a></li>
+          <li><a href="#"> Mattaponi</a></li>
+           <li><a href="#">Plum Point</a></li>
+           <li><a href="#">Topping</a></li>
        </ul>
      </div>
 
    </div>
  </footer>
 </main>
-
-
-
-
 
   </body>
 </html>
